@@ -42,11 +42,11 @@ function showFields() {
         // Show section image
         let imagePath = '';
         if (sectionType === "T-profile") {
-                sectionImage.src = "https://raw.githubusercontent.com/mohmohragrag/Calculator_Elsafwaa/blob/main/images/t_profile.png";
+       sectionImage.src = "https://raw.githubusercontent.com/mohmohragrag/Calculator_Elsafwaa/main/images/t_profile.png";
+       } else {
+       imagePath = `images/${sectionType.replace(/\s+/g, '_').toLowerCase()}.png`;
+      }
 
-        } else {
-            imagePath = `images/${sectionType.replace(/\s+/g, '_').toLowerCase()}.png`;
-        }
         
         sectionImage.src = imagePath;
         sectionImage.style.display = "block";
